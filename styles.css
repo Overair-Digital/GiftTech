@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+:root {
+    --GiftTechGreen: #5EB130;
+    --GiftTechBlue: #0C1559;
+}
+body {
+    font-family: Poppins, sans-serif;
+}
+* {
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+a {
+    text-decoration: none !important;
+}
+
+nav {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 25px;
+    flex-wrap: wrap;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+nav .logoImage {
+    height: 75%;
+}
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-between;
+}
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+ul li {
+    margin: 0.5rem;
+}
+nav ul li {
+    margin: 0 5px;
+}
+nav ul li a {
+    height: 35%;
+    color: black !important;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+nav ul li a.active {
+    color: var(--GiftTechGreen);
+}
+nav ul li a:hover {
+    color: var(--GiftTechGreen) !important;
+}
+nav .menu-btn i {
+    color: rgb(250, 249, 246);
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+    transition: 0.3s ease;
+}
+nav .menu-btn i:hover {
+    color: var(--GiftTechGreen);
+    transition: 0.3s ease;
+}
+input[type="checkbox"] {
+    display: none;
+}
+@media (max-width: 450px) {
+    .card-img {
+        height: 500px !important;
+    }
+}
+@media (max-width: 1000px) {
+    nav {
+        padding: 0 40px 0 50px;
+    }
+}
+@media (max-width: 920px) {
+    html {
+        font-size: 12px;
+    }
+
+    nav .menu-btn i {
+        display: block;
+    }
+
+    #click:checked ~ .menu-btn i:before {
+        content: "\f00d";
+    }
+
+    nav {
+        background: white;
+        width: 100%;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background: white;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+    #click:checked ~ ul {
+        left: 0;
+    }
+
+    nav ul li {
+        width: 100%;
+        margin: 40px 0;
+    }
+
+    nav ul li a {
+        width: 100%;
+        margin-left: -100%;
+        display: block;
+        font-size: 20px;
+        color: black;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    #click:checked ~ ul li a {
+        margin-left: 0px;
+    }
+
+    nav ul li a.active, nav ul li a:hover {
+        background: none;
+        color: var(--GiftTechGreen) !important;
+    }
+
+    nav .logoImage {
+        height: 55%;
+    }
+}
+.yellow {
+    height: 300px;
+    width: 100vw;
+    background-color: yellow;
+}
+.blue {
+    height: 200px;
+    width: 100vw;
+    background-color: blue;
+}
