@@ -4,8 +4,15 @@
     --GiftTechGreen: #5EB130;
     --GiftTechBlue: #0C1559;
 }
+.fontWhite {
+    color: white;
+}
+@font-face {
+    font-family: Poppins, sans-serif;
+}
 body {
     font-family: Poppins, sans-serif;
+    overflow-x: hidden;
 }
 * {
     scroll-behavior: smooth;
@@ -15,12 +22,10 @@ body {
 }
 .wrapper {
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 a {
     text-decoration: none !important;
 }
-
 nav {
     display: flex;
     height: 80px;
@@ -37,7 +42,7 @@ nav {
     width: 100vw;
 }
 nav .logoImage {
-    height: 75%;
+    height: 95%;
 }
 nav ul {
     display: flex;
@@ -73,7 +78,7 @@ nav ul li a:hover {
     color: var(--GiftTechGreen) !important;
 }
 nav .menu-btn i {
-    color: rgb(250, 249, 246);
+    color: var(--GiftTechGreen);
     font-size: 22px;
     cursor: pointer;
     display: none;
@@ -87,8 +92,8 @@ input[type="checkbox"] {
     display: none;
 }
 @media (max-width: 450px) {
-    .card-img {
-        height: 500px !important;
+    .mainH1 {
+        font-size: 42px !important;
     }
 }
 @media (max-width: 1000px) {
@@ -141,7 +146,6 @@ input[type="checkbox"] {
         display: block;
         font-size: 20px;
         color: black;
-        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
 
     #click:checked ~ ul li a {
@@ -154,13 +158,49 @@ input[type="checkbox"] {
     }
 
     nav .logoImage {
-        height: 55%;
+        height: 95%;
     }
 }
-.yellow {
-    height: 300px;
-    width: 100vw;
-    background-color: yellow;
+.bg {
+    padding-block: 15rem;
+    margin-block-end: 0;
+    background-position: center;
+    background-size: cover;
+    background-image: url("Images/Untitled design (3).png");
+    height: 800px;
+}
+.aboutUs {
+    padding-block: 18rem;
+    margin-block-end: 0;
+    background-color: var(--GiftTechGreen);
+}
+.h1Sep {
+    color: white;
+    font-size: 69px;
+    font-weight: 1000;
+    padding-left: 35px;
+}
+
+.btn {
+    outline: none;
+    text-decoration: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 45px;
+    width: 250px;
+    opacity: 1;
+    background-color: white;
+    border: none;
+}
+.btn .btnspan {
+    color: var(--GiftTechGreen);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.7px;
 }
 .blue {
     height: 200px;
