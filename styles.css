@@ -2,17 +2,20 @@
 
 :root {
     --GiftTechGreen: #5EB130;
-    --GiftTechBlue: #0C1559;
+    --GiftTechBlue: #30C7B5;
     --GiftTechGrey: #474747;
 }
 .fontWhite {
-    color: white;
+    color: white !important;
 }
 .fontBlack {
-    color: black;
+    color: black !important;
 }
 .fontGreen {
-    color: var(--GiftTechGreen);
+    color: var(--GiftTechGreen) !important;
+}
+.fontBlue {
+    color: var(--GiftTechBlue) !important;
 }
 @font-face {
     font-family: Poppins, sans-serif;
@@ -326,22 +329,18 @@ input[type="checkbox"] {
 }
 .donateBtn2 {
     border: 1px solid var(--GiftTechBlue);
+    background-color: white;
     border-radius: 50px;
     padding: 12px;
     width: max-content;
     transition: 0.3s ease-in-out;
 }
+/*
 .donateBtn2:hover {
     background-color: white;
     transition: 0.3s ease-in-out;
 }
-.cardLink {
-    color: black;
-    border: 1px solid var(--GiftTechGreen);
-    border-radius: 50px;
-    padding: 8px;
-    width: max-content;
-}
+ */
 .whatWeDoSec {
     width: 100vw;
     height: 300px;
@@ -367,4 +366,13 @@ input[type="checkbox"] {
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.borderCard {
+    display: inline-block;
+    z-index: -2;
+    height: max-content;
+    padding: 1rem 0;
+    margin-right: 35px;
+    width: 250px;
+    border-bottom: 2px solid black;
 }
