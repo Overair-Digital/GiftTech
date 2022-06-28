@@ -3,9 +3,13 @@
 :root {
     --GiftTechGreen: #5EB130;
     --GiftTechBlue: #0C1559;
+    --GiftTechGrey: #474747;
 }
 .fontWhite {
     color: white;
+}
+.fontBlack {
+    color: black;
 }
 @font-face {
     font-family: Poppins, sans-serif;
@@ -177,20 +181,20 @@ input[type="checkbox"] {
     margin-block-end: 0;
     background-position: center;
     background-size: cover;
-    background-image: url("Images/Untitled design (3).png");
+    background-image: url("Images/Untitled design (3) (1).png");
     height: 800px;
 }
 .h1Sep {
-    color: white;
     font-size: 69px;
     font-weight: 1000;
     padding-left: 35px;
+    padding-right: 35px;
 }
 .pSep {
-    color: white;
     font-size: 28px;
     font-weight: 400;
     padding-left: 35px;
+    padding-right: 35px;
 }
 .btn {
     outline: none;
@@ -230,6 +234,8 @@ input[type="checkbox"] {
     width: 50%;
 }
 .section-container .columns.image {
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 .section-container .columns.content .content-container {
@@ -274,4 +280,21 @@ input[type="checkbox"] {
         justify-content: center;
         align-content: center;
     }
+}
+.donateBtn2 {
+    border: 1px solid var(--GiftTechBlue);
+    border-radius: 50px;
+    padding: 12px;
+    width: max-content;
+    transition: 0.3s ease-in-out;
+}
+.donateBtn2:hover {
+    background-color: white;
+    transition: 0.3s ease-in-out;
+}
+.whatWeDoSec {
+    width: 100vw;
+    height: 300px;
+    text-align: center;
+    margin: auto auto;
 }
