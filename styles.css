@@ -149,6 +149,9 @@ input[type="checkbox"] {
     .mobileBig {
         font-size: 18px;
     }
+    .bigH1 {
+        font-size: 52px !important;
+    }
 }
 @media (max-width: 920px) {
     html {
