@@ -43,6 +43,7 @@ a {
     cursor: pointer !important;
 }
 nav {
+    z-index: 10;
     display: flex;
     height: 80px;
     width: 100%;
@@ -399,7 +400,6 @@ input[type="checkbox"] {
 .card {
     display: flex;
     flex-wrap: wrap;
-    z-index: -2;
     padding: 24px 14px;
     height: 225px;
     width: 450px;
