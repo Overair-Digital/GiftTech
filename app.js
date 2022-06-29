@@ -11,31 +11,38 @@ function stickyNav() { // nice stolen code
     }
 }
 
+const factsSection = document.querySelector('#counterSection');
 
-window.addEventListener('scroll', function() {
-    let hasFired = false;
+options = {
+    root: null,
+    threshold: 0,
+    rootMargin: "-75px"
+};
 
-    if (document.body.scrollTop === 850) {
-        hasFired = true;
-        counter();
-    }
-});
+let observer = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            return;
+        }
+        function counter(id, start, end, duration) {
+            let obj = document.getElementById(id),
+                current = start,
+                range = end - start,
+                increment = end > start ? 1 : -1,
+                step = Math.abs(Math.floor(duration / range)),
+                timer = setInterval(() => {
+                    current += increment;
+                    obj.textContent = current;
+                    if (current === end) {
+                        clearInterval(timer);
+                    }
+                }, step);
+        }
+        counter("count1", 0, 5, 3000);
+        counter("count2", 0, 42, 2500);
+        counter("count3", 0, 63, 3000);
+        counter("count4", 0, 11, 3000);
+    });
+}, options);
 
-function counter(id, start, end, duration) {
-    let obj = document.getElementById(id),
-        current = start,
-        range = end - start,
-        increment = end > start ? 1 : -1,
-        step = Math.abs(Math.floor(duration / range)),
-        timer = setInterval(() => {
-            current += increment;
-            obj.textContent = current;
-            if (current === end) {
-                clearInterval(timer);
-            }
-        }, step);
-}
-counter("count1", 0, 5, 3000);
-counter("count2", 0, 42, 2500);
-counter("count3", 0, 63, 3000);
-counter("count4", 0, 11, 3000);
+observer.observe(factsSection);

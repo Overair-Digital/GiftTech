@@ -20,7 +20,6 @@
 </head>
 <header>
     <nav>
-        <!--<img class="logoImage" src="Images/Gift-tech-logo-fb-180.png" alt="GiftTech Logo"/>-->
         <img class="logoImage" src="Images/Unknown.jpeg" alt="GiftTech Logo"/>
         <input type="checkbox" id="click" />
         <label for="click" class="menu-btn">
@@ -29,9 +28,9 @@
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">What We Do</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#" style="color: #5EB130 !important; border: 1px solid; border-radius: 50px;">Donate</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Donate</a></li>
+            <li><a href="#" style="color: #5EB130 !important; border: 1px solid; border-radius: 50px;">Request Devices</a></li>
         </ul>
     </nav>
 </header>
@@ -91,7 +90,7 @@
 
         <div class="card c1">
             <div class="cardHeader">
-                <h1 class="h1SepCard fontGreen">Giving
+                <h1 class="h1SepCard fontGreen">Donating
                     <lord-icon
                             src="https://cdn.lordicon.com/wwbrugun.json"
                             trigger="loop"
@@ -99,10 +98,10 @@
                             style="width:32px;height:32px">
                     </lord-icon>
                 </h1>
-                <p class="pSepCard">We would love old laptops, PCs, tablets and smartphones from the masses.</p>
+                <p class="pSepCard">We would love old laptops, PCs, tablets and smartphones from organisations and individuals.</p>
                 <br />
-                <br />
-                <a href="#" class="pSepCard fontGreen" style="padding-right: 5px;">Fill out form</a><a href="#" class="pSepCard fontGreen" style="padding: 0">| Techxchange</a>
+
+                <a href="#" class="pSepCard fontGreen">Fill form below</a>
             </div>
         </div>
 
@@ -110,33 +109,33 @@
             <div class="cardHeader">
                 <h1 class="h1SepCard fontGreen">Seeking
                     <lord-icon
+                            src="https://cdn.lordicon.com/uvextprq.json"
+                            trigger="loop"
+                            style="width:32px;height:32px">
+                    </lord-icon>
+                </h1>
+                <p class="pSepCard">We welcome requests for devices.</p>
+                <br />
+                <br />
+                <br />
+                <a href="#" class="pSepCard fontGreen">Fill out form</a>
+            </div>
+        </div>
+
+        <div class="card c3">
+            <div class="cardHeader">
+                <h1 class="h1SepCard fontGreen">Volunteering
+                    <lord-icon
                             src="https://cdn.lordicon.com/tcvueyac.json"
                             trigger="loop"
                             colors="primary:black"
                             style="width:32px;height:32px">
                     </lord-icon>
                 </h1>
-                <p class="pSepCard">We welcome requests for tech or check out for techxchange events.</p>
+                <p class="pSepCard">We would appreciate if you could spare your time to help us.</p>
                 <br />
                 <br />
-                <a href="#" class="pSepCard fontGreen" style="padding-right: 5px;">Fill out form</a><a href="#" class="pSepCard fontGreen" style="padding: 0">| Techxchange</a>
-            </div>
-        </div>
-
-        <div class="card c3">
-            <div class="cardHeader">
-                <h1 class="h1SepCard fontGreen">Donating
-                    <lord-icon
-                            src="https://cdn.lordicon.com/gtcqrwnh.json"
-                            trigger="loop"
-                            colors="primary:black"
-                            style="width:32px;height:32px">
-                    </lord-icon>
-                </h1>
-                <p class="pSepCard">We would appreciate if you could spare your time to help us, or donate.</p>
-                <br />
-                <br />
-                <a href="#" class="pSepCard fontGreen" style="padding-right: 5px;">Volunteering</a><a href="#" class="pSepCard fontGreen" style="padding: 0">| Donations</a>
+                <a href="#" class="pSepCard fontGreen">Contact us below</a>
             </div>
         </div>
     </div>
@@ -187,36 +186,44 @@
             <br />
             <p class="pSep">There is £20 million worth of “unused” technology sitting in people’s homes. Do you have any?</p>
             <br />
-            <h2>
-                <a href="#" style="color: #5EB130 !important; border: 1px solid; border-radius: 50px; padding: 10px;">Donate</a>
-            </h2>
+            <lord-icon
+                    src="https://cdn.lordicon.com/xhdhjyqy.json"
+                    trigger="loop"
+                    colors="primary:#121331"
+                    state="hover-2"
+                    style="width:75px;height:75px">
+            </lord-icon>
         </div>
     </div>
 
     <!-- Footer -->
+    <form method="post">
+        <div class="section-container fontWhite" style="background-color: #5EB130FF;">
+            <div class="columns content">
+                <div class="content-container">
 
-    <div class="section-container fontWhite" style="background-color: #5EB130FF;">
-        <div class="columns content">
-            <div class="content-container">
+                    <p class="pSep2" style="padding: 0 !important;">Donation Form</p>
+                    <label>
+                        <input type="text" placeholder="Full Name" name="Name"/>
+                        <input type="email" placeholder="Email Address" name="email" />
+                        <input type="text" placeholder="Phone Number" name="Phone"/>
+                    </label>
+                    <small style="display: none">Error Msg</small>
 
-                <p class="pSep2" style="padding: 0 !important;">Stay up to date</p>
-                <label>
-                    <input type="email" placeholder="Email Address" name="email" />
-                </label>
-                <small style="display: none">Error Msg</small>
+                    <button type="submit" class="donateBtn2">Submit</button>
 
-                <button type="submit" class="donateBtn2">Submit</button>
-
+                </div>
+            </div>
+            <div class="columns content">
+                <div class="content-container">
+                    <p class="pSep2" style="padding: 0 !important;">Contact</p>
+                    <p>8 Roman Walk, Princesshay EX1 1GN</p>
+                    <a href="mailto:hello@gifttech.org.uk" style="text-decoration: underline !important; color: white !important;">hello@gifttech.org.uk</a>
+                </div>
             </div>
         </div>
-        <div class="columns content">
-            <div class="content-container">
-                <p class="pSep2" style="padding: 0 !important;">Contact</p>
-                <p>8 Roman Walk, Princesshay EX1 1GN</p>
-                <a style="text-decoration: underline !important;">hello@gifttech.org.uk</a>
-            </div>
-        </div>
-    </div>
+    </form>
+
 
     <div class="footer fontWhite">
         <p style="padding: 25px 35px;">Copyright © 2022 Gift Tech | Created By Overair-Digital</p>
