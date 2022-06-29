@@ -36,6 +36,8 @@ body {
     }
 }
 .wrapper {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
 }
 a {
@@ -262,8 +264,8 @@ input[type="checkbox"] {
 .h1SepCard {
     font-size: 36px;
     font-weight: 600;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 10px;
+    /*padding-right: 25px;*/
 }
 .pSep {
     font-size: 28px;
@@ -283,8 +285,8 @@ input[type="checkbox"] {
 .pSepCard {
     font-size: 16px;
     font-weight: 200;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 10px;
+    /*padding-right: 25px;*/
 }
 .btn {
     outline: none;
