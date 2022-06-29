@@ -132,6 +132,12 @@ input[type="checkbox"] {
     .oneofthep {
         font-size: 35px !important;
     }
+    .pSepCard {
+        font-size: 10px !important;
+    }
+    .h1SepCard {
+        font-size: 30px;
+    }
 }
 @media (max-width: 1000px) {
     nav {
@@ -147,10 +153,16 @@ input[type="checkbox"] {
         width: 100% !important;
     }
     .mobileBig {
-        font-size: 18px;
+        font-size: 18px !important;
     }
     .bigH1 {
         font-size: 52px !important;
+    }
+    .pSepCard {
+        font-size: 14px !important;
+    }
+    .h1SepCard {
+        font-size: 32px !important;
     }
 }
 @media (max-width: 920px) {
@@ -211,6 +223,18 @@ input[type="checkbox"] {
 
     nav .logoImage {
         height: 95%;
+    }
+    .flex {
+        flex-flow: row wrap ;
+    }
+    .c1 {
+        order: 1;
+    }
+    .c2 {
+        order: 2;
+    }
+    .c3 {
+        order: 3;
     }
 }
 .bg {
@@ -339,18 +363,6 @@ input[type="checkbox"] {
         justify-content: center;
         align-content: center;
     }
-    .flex {
-        flex-flow: row wrap;
-    }
-    .c1 {
-        order: 1;
-    }
-    .c2 {
-        order: 2;
-    }
-    .c3 {
-        order: 3;
-    }
 }
 .donateBtn2 {
     border: none;
@@ -385,16 +397,23 @@ input[type="checkbox"] {
     margin-top: 2.5rem;
 }
 .card {
+    display: flex;
+    flex-wrap: wrap;
     z-index: -2;
     padding: 24px 14px;
-    height: 200px;
-    width: 400px;
+    height: 225px;
+    width: 450px;
     background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+    white-space: normal;
+    overflow: hidden;
+}
+.cardHeader {
+    max-width: 450px;
 }
 .borderCard {
     display: inline-block;
