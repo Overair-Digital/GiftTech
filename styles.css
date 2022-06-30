@@ -60,6 +60,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100vw;
+    max-width: 100%;
 }
 nav .logoImage {
     height: 95%;
