@@ -45,9 +45,11 @@ a {
     text-decoration: none !important;
     cursor: pointer !important;
 }
+.navWrapper {
+    margin-top: 80px;
+}
 nav {
-    position: fixed;
-    z-index: 1;
+    z-index: 10;
     display: flex;
     height: 80px;
     width: 100%;
@@ -175,21 +177,17 @@ input[type="checkbox"] {
     html {
         font-size: 12px;
     }
-
     nav .menu-btn i {
         display: block;
     }
-
     #click:checked ~ .menu-btn i:before {
         content: "\f00d";
     }
-
     nav {
         background: white;
         width: 100%;
         max-width: 100%;
     }
-
     nav ul {
         position: fixed;
         top: 80px;
@@ -201,16 +199,13 @@ input[type="checkbox"] {
         display: block;
         transition: all 0.3s ease;
     }
-
     #click:checked ~ ul {
         left: 0;
     }
-
     nav ul li {
         width: 100%;
         margin: 40px 0;
     }
-
     nav ul li a {
         width: 100%;
         margin-left: -100%;
@@ -218,16 +213,13 @@ input[type="checkbox"] {
         font-size: 20px;
         color: black;
     }
-
     #click:checked ~ ul li a {
         margin-left: 0px;
     }
-
     nav ul li a.active, nav ul li a:hover {
         background: none;
         color: var(--GiftTechGreen) !important;
     }
-
     nav .logoImage {
         height: 95%;
     }

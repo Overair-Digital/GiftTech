@@ -1,4 +1,4 @@
-/*
+
 let navbar = document.querySelector('nav');
 let sticky = navbar.offsetTop;
 
@@ -12,7 +12,7 @@ function stickyNav() { // nice stolen code
         navbar.classList.remove('sticky');
     }
 }
-*/
+
 const factsSection = document.querySelector('#counterSection');
 
 options = {
