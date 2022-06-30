@@ -19,7 +19,7 @@
 
 </head>
 <header>
-    <div class="navWrapper">
+    <div class="navWrapper" id="top">
         <nav>
             <img class="logoImage" src="Images/Unknown.jpeg" alt="GiftTech Logo"/>
             <input type="checkbox" id="click" />
@@ -27,11 +27,11 @@
                 <i class="fas fa-bars"></i>
             </label>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#top">Home</a></li>
+                <!--<li><a href="#">About</a></li>
                 <li><a href="#">Events</a></li>
-                <li><a href="#">Donate</a></li>
-                <li><a href="#" style="color: #5EB130 !important; border: 1px solid; border-radius: 50px;">Request Devices</a></li>
+                <li><a href="#">Donate</a></li>-->
+                <li><a href="https://www.overair.co.uk/gifttech-device-request-form/?fbclid=IwAR1E4dgkeoaTV7UnmoxfWEj0969RQMdXPT5yHZUlMajtvjV45kLWT82gMG0" target="_blank" style="color: #5EB130 !important; border: 1px solid; border-radius: 50px;">Request Devices</a></li>
             </ul>
         </nav>
     </div>
@@ -91,7 +91,7 @@
                 <br />
                 <br />
                 <br />
-                <a href="" class="pSepCard fontGreen">Fill out form</a>
+                <a href="https://www.overair.co.uk/gifttech-device-request-form/?fbclid=IwAR1E4dgkeoaTV7UnmoxfWEj0969RQMdXPT5yHZUlMajtvjV45kLWT82gMG0" target="_blank" class="pSepCard fontGreen">Fill out form</a>
             </div>
         </div>
 
@@ -167,41 +167,68 @@
         </div>
     </div>
 
-    <form method="post" id="form">
+    <form method="post" action="https://formsubmit.co/hello@gifttech.org.uk" id="form">
         <div class="section-container fontWhite" style="background-color: #5EB130FF;" id="footer">
             <div class="columns content">
                 <div class="content-container">
 
+                    <input type="hidden" name="_captcha" value="false">
                     <p class="pSep2" style="padding: 0 !important;">Donation Form</p>
 
-                        <div class="form-control">
-                            <input id="name" type="text" placeholder="Full Name" name="Name"/>
-                            <small style="display: none;">Error Msg</small>
-                        </div>
+                    <div class="form-control">
+                        <input id="name" type="text" placeholder="Full Name" name="Name"/>
+                        <small style="display: none;">Error Msg</small>
+                    </div>
 
-                        <div class="form-control">
-                            <input id="email" type="email" placeholder="Email Address" name="email" />
-                            <small style="display: none;">Error Msg</small>
-                        </div>
+                    <div class="form-control">
+                        <input id="email" type="email" placeholder="Email Address" name="Email" />
+                        <small style="display: none;">Error Msg</small>
+                    </div>
 
-                        <div class="form-control">
-                            <input id="number" type="text" placeholder="Phone Number" name="Phone"/>
-                            <small style="display: none;">Error Msg</small>
-                        </div>
+                    <div class="form-control">
+                        <input id="number" type="text" placeholder="Phone Number" name="Phone"/>
+                        <small style="display: none;">Error Msg</small>
+                    </div>
 
                     <br />
-                    <div style="display: flex; justify-content: center; align-content: center">
+                    <div class="radioFlex">
+                        <label>
+                            <input type="radio" name="Individual-Organisation" />  Individual
+                        </label>
+
+                        <label>
+                            <input type="radio" name="Individual-Organisation" />  Organisation
+                        </label>
+                    </div>
+
+                    <br />
+                    <div style="display: flex; justify-content: center; align-content: center; margin-bottom: 2rem;">
                         <input type="submit" placeholder="Submit"/>
                     </div>
+
+
+                    <p>We can take any tech which is 10 years or younger - If you’re unsure please contact us anyway.</p>
 
                 </div>
             </div>
             <div class="columns content">
                 <div class="content-container">
                     <p class="pSep2" style="padding: 0 !important;">Contact</p>
-                    <p>8 Roman Walk, Princesshay EX1 1GN</p>
+                    <p>18 Southernhay West, Exeter</p>
                     <a href="mailto:hello@gifttech.org.uk" style="text-decoration: underline !important; color: white !important;">hello@gifttech.org.uk</a>
+                    <div id="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1262.9251742971783!2d-3.527246857200771!3d50.72271546890279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486da43c5237e941%3A0x311416f3425aa373!2s18%20Southernhay%20W%2C%20Exeter%20EX1%201PJ!5e0!3m2!1sen!2suk!4v1656598398000!5m2!1sen!2suk"
+                            width="1000"
+                            height="450"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
                 </div>
+
             </div>
         </div>
     </form>
