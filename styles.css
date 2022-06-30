@@ -36,8 +36,6 @@ body {
     }
 }
 .wrapper {
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
 }
 a {
@@ -57,10 +55,9 @@ nav {
     flex-wrap: wrap;
 }
 .sticky {
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100vw;
-    max-width: 100%;
 }
 nav .logoImage {
     height: 95%;
@@ -183,7 +180,6 @@ input[type="checkbox"] {
     nav {
         background: white;
         width: 100%;
-        max-width: 100%;
     }
     nav ul {
         position: fixed;
@@ -236,10 +232,9 @@ input[type="checkbox"] {
 .bg {
     padding-block: 15rem;
     margin-block-end: 0;
+    background-image:url('Images/brooke-cagle--uHVRvDr7pg-unsplash.jpg');
     background-position: center;
     background-size: cover;
-    background-image: url("Images/brooke-cagle--uHVRvDr7pg-unsplash.jpg");
-    height: 600px;
 }
 .h1Sep {
     font-size: 69px;
@@ -368,12 +363,6 @@ input[type="checkbox"] {
     width: max-content;
     transition: 0.3s ease-in-out;
 }
-/*
-.donateBtn2:hover {
-    background-color: white;
-    transition: 0.3s ease-in-out;
-}
- */
 .whatWeDoSec {
     width: 100vw;
     height: 300px;
@@ -450,6 +439,8 @@ input[type="submit"] {
     padding: 0 35px;
 }
 .footer {
+    display: grid;
+    place-items: center;
     height: 75px;
     width: 100vw;
     border-top: 1px solid white;

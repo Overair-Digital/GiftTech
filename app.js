@@ -1,4 +1,3 @@
-
 let navbar = document.querySelector('nav');
 let sticky = navbar.offsetTop;
 
