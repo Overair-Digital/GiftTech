@@ -167,19 +167,29 @@
         </div>
     </div>
 
-    <form method="post">
+    <form method="post" id="form">
         <div class="section-container fontWhite" style="background-color: #5EB130FF;" id="footer">
             <div class="columns content">
                 <div class="content-container">
 
                     <p class="pSep2" style="padding: 0 !important;">Donation Form</p>
-                    <label>
-                        <input type="text" placeholder="Full Name" name="Name"/>
-                        <input type="email" placeholder="Email Address" name="email" />
-                        <input type="text" placeholder="Phone Number" name="Phone"/>
-                    </label>
-                    <small style="display: none">Error Msg</small>
 
+                        <div class="form-control">
+                            <input id="name" type="text" placeholder="Full Name" name="Name"/>
+                            <small style="display: none;">Error Msg</small>
+                        </div>
+
+                        <div class="form-control">
+                            <input id="email" type="email" placeholder="Email Address" name="email" />
+                            <small style="display: none;">Error Msg</small>
+                        </div>
+
+                        <div class="form-control">
+                            <input id="number" type="text" placeholder="Phone Number" name="Phone"/>
+                            <small style="display: none;">Error Msg</small>
+                        </div>
+
+                    <br />
                     <div style="display: flex; justify-content: center; align-content: center">
                         <input type="submit" placeholder="Submit"/>
                     </div>
