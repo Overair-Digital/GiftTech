@@ -1,5 +1,7 @@
+/*
 let navbar = document.querySelector('nav');
 let sticky = navbar.offsetTop;
+
 
 window.onscroll = function() {stickyNav()};
 
@@ -10,7 +12,7 @@ function stickyNav() { // nice stolen code
         navbar.classList.remove('sticky');
     }
 }
-
+*/
 const factsSection = document.querySelector('#counterSection');
 
 options = {
