@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - GiftTech</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+  <!--<link rel="manifest" href="Favicon/site.webmanifest">-->
+  <meta name="msapplication-TileColor" content="#5EB130">
+  <meta name="theme-color" content="#5EB130">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Font Awesome -->
+
+</head>
+<header>
+  <div class="navWrapper" id="top">
+    <nav>
+      <img class="logoImage" src="Images/Unknown.jpeg" alt="GiftTech Logo" />
+      <input type="checkbox" id="click" />
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <!--<li><a href="#">Events</a></li>
+        <li><a href="#">Donate</a></li>-->
+        <li><a href="https://www.overair.co.uk/gifttech-device-request-form/?fbclid=IwAR1E4dgkeoaTV7UnmoxfWEj0969RQMdXPT5yHZUlMajtvjV45kLWT82gMG0" target="_blank" style="color: #5EB130 !important; border: 1px solid; border-radius: 50px;">Request Devices</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<body>
+
+<div class="wrapper">
+
+  <div class="aboutBg fontWhite">
+    <h1 class="bigH1">About Us</h1>
+  </div>
+
+  <div class="deviceJourney">
+    <div class="fontBlack" style="margin-top: 3rem;">
+      <h1 class="h1Sep">Device Journey</h1>
+      <p class="pSep">"Putting technology in the hands of those in need"</p>
+      <p class="pSep">The journey your tech will take</p>
+      <br />
+      <lord-icon
+              src="https://cdn.lordicon.com/xhdhjyqy.json"
+              trigger="loop"
+              colors="primary:#5EB130"
+              state="hover-2"
+              style="width:50px; height:50px">
+      </lord-icon>
+    </div>
+  </div>
+
+  <div class="section-container" style="background-image:url('Images/techPath.png'); background-position: center; background-size: contain; height: 450px; width: 100%; background-repeat: no-repeat;"></div>
+  <br />
+  <br />
+
+  <form method="post" action="https://formsubmit.co/hello@gifttech.org.uk" id="form">
+    <div class="section-container fontWhite" style="background-color: #5EB130FF;" id="footer">
+      <div class="columns content">
+        <div class="content-container">
+
+          <input type="hidden" name="_captcha" value="false">
+          <p class="pSep2" style="padding: 0 !important;">Donation Form</p>
+
+          <div class="form-control">
+            <input id="name" type="text" placeholder="Full Name" name="Name"/>
+            <small style="display: none;">Error Msg</small>
+          </div>
+
+          <div class="form-control">
+            <input id="email" type="email" placeholder="Email Address" name="Email" />
+            <small style="display: none;">Error Msg</small>
+          </div>
+
+          <div class="form-control">
+            <input id="number" type="text" placeholder="Phone Number" name="Phone"/>
+            <small style="display: none;">Error Msg</small>
+          </div>
+
+          <br />
+          <div class="radioFlex">
+            <label>
+              <input type="radio" name="Individual-Organisation" />  Individual
+            </label>
+
+            <label>
+              <input type="radio" name="Individual-Organisation" />  Organisation
+            </label>
+          </div>
+
+          <br />
+          <div style="display: flex; justify-content: center; align-content: center; margin-bottom: 2rem;">
+            <input type="submit" placeholder="Submit"/>
+          </div>
+
+
+          <p>We can take any tech which is 10 years or younger - If you’re unsure please contact us anyway.</p>
+
+        </div>
+      </div>
+      <div class="columns content">
+        <div class="content-container">
+          <p class="pSep2" style="padding: 0 !important;">Contact</p>
+          <p>18 Southernhay West, Exeter</p>
+          <a href="mailto:hello@gifttech.org.uk" style="text-decoration: underline !important; color: white !important;">hello@gifttech.org.uk</a>
+          <div id="map">
+            <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1262.9251742971783!2d-3.527246857200771!3d50.72271546890279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486da43c5237e941%3A0x311416f3425aa373!2s18%20Southernhay%20W%2C%20Exeter%20EX1%201PJ!5e0!3m2!1sen!2suk!4v1656598398000!5m2!1sen!2suk"
+                    width="1000"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </form>
+
+  <div class="footer fontWhite">
+    <p>Copyright © 2022 Gift Tech | Created By Overair-Digital</p>
+  </div>
+
+
+</div>
+
+<script src="navScript.js"></script>
+<script src="app.js"></script>
+<script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+</body>
+</html>
