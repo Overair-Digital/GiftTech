@@ -462,6 +462,17 @@ input[type="submit"] {
     padding: 18px 24px;
     width: 50%;
 }
+select {
+    font-family: Poppins, sans-serif;
+    color: black;
+    display: inline-block;
+    width: 100%;
+    padding: 18px 20px;
+    margin: 20px 2px;
+    box-shadow: 12.5px 12.5px 10px rgba(0, 0, 0, 0.035), 100px 100px 80px rgba(0, 0, 0, 0.07);
+    outline: none;
+    border: 1px solid var(--GiftTechGreen) !important;
+}
 .bigH1 {
     font-size: 76px;
     font-weight: 1200;
@@ -524,4 +535,8 @@ input[type="submit"] {
     justify-content: center;
     align-content: center;
     margin-top: 20%;
+}
+.grid {
+    display: grid;
+    place-items: center;
 }

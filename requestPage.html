@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GiftTech - Device Request Form</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+    <!--<link rel="manifest" href="Favicon/site.webmanifest">-->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome -->
+
+</head>
+<header>
+    <div class="navWrapper" id="top">
+        <nav>
+            <img class="logoImage" src="Images/Unknown.jpeg" alt="GiftTech Logo"/>
+            <input type="checkbox" id="click" />
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="whatwedo.html">What We Do</a></li>
+                <!--<li><a href="#">Events</a></li>-->
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="https://gifttecg.org.uk/requestPage.html" target="_blank" style="color: #5EB130 !important; border: 1px solid; border-radius: 50px;">Request Devices</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<body>
+<div class="wrapper">
+    <div class="grid">
+        <form method="post" action="https://formsubmit.co/hello@gifttech.org.uk" id="requestForm">
+
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://gifttech.org.uk/thankyou.html">
+            <br />
+            <br />
+
+            <h1>GiftTech Device Request Form</h1>
+
+            <div class="form-control">
+                <input id="rName" type="text" placeholder="Firstname" name="Name"/>
+                <small style="display: none;">Error Msg</small>
+            </div>
+
+            <div class="form-control">
+                <input id="rSurname" type="text" placeholder="Surname" name="Surname"/>
+                <small style="display: none;">Error Msg</small>
+            </div>
+
+            <div class="form-control">
+                <input id="org" type="text" placeholder="Organisation" name="Organisation"/>
+                <small style="display: none;">Error Msg</small>
+            </div>
+
+            <div class="form-control">
+                <input id="address" type="text" placeholder="Address" name="Address"/>
+                <small style="display: none;">Error Msg</small>
+            </div>
+
+            <div class="form-control">
+                <input id="rEmail" type="email" placeholder="Email Address" name="Email" />
+                <small style="display: none;">Error Msg</small>
+            </div>
+
+            <div class="form-control">
+                <input id="rNumber" type="text" placeholder="Contact Number" name="Contact Number" />
+                <small style="display: none;">Error Msg</small>
+            </div>
+
+            <h1>Device Type *</h1>
+
+            <div class="form-control">
+                <select id="laptop" name="Laptop Type">
+                    <option>Laptop</option>
+                    <option value="Mac">Mac</option>
+                    <option value="PC">PC</option>
+                    <option value="No Preference">No Preference</option>
+                    <option value="None">None</option>
+                </select>
+            </div>
+
+            <div class="form-control">
+                <select id="desktop" name="Desktop Type">
+                    <option>Desktop</option>
+                    <option value="Mac">Mac</option>
+                    <option value="PC">PC</option>
+                    <option value="No Preference">No Preference</option>
+                    <option value="None">None</option>
+                </select>
+            </div>
+
+            <div class="form-control">
+                <select id="tablet" name="Tablet Type">
+                    <option>Tablet</option>
+                    <option value="Android">Android</option>
+                    <option value="Windows">Windows</option>
+                    <option value="Mac">Apple</option>
+                    <option value="None">None</option>
+                </select>
+            </div>
+
+            <div class="form-control">
+                <select id="phone" name="Phone Type">
+                    <option>Smart Phone</option>
+                    <option value="Android">Android</option>
+                    <option value="Windows">Windows</option>
+                    <option value="Apple">Apple</option>
+                    <option value="None">None</option>
+                </select>
+            </div>
+
+            <div class="form-control">
+                <input type="submit" placeholder="Submit" style="border: 1px solid #5EB130FF; width: 100%;" />
+            </div>
+            <br />
+            <br />
+        </form>
+    </div>
+</div>
+
+<script src="requestValidation.js"></script>
+</body>
+</html>
