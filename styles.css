@@ -425,6 +425,33 @@ input[type="checkbox"] {
     white-space: normal;
     overflow: hidden;
 }
+.containerr {
+    width: 450px;
+    padding: 24px 14px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    white-space: normal;
+    overflow: hidden;
+}
+.read-more-container {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 3;
+    justify-content: space-around;
+    padding: 24px;
+    gap: 25px;
+}
+.cardTextBottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 15px;
+    padding-left: 14px;
+}
 .cardHeader {
     max-width: 450px;
 }
@@ -499,24 +526,6 @@ select {
     width: 100vw;
     height: 250px;
     text-align: center;
-}
-.read-more-container {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    color: black;
-}
-.containerr {
-    text-align: left;
-    width: 350px;
-    padding: 24px 14px;
-    background: rgba( 255, 255, 255, 1 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    backdrop-filter: blur( 4px );
-    border-radius: 10px;
-    line-height: 2rem;
-    margin-top: 2rem;
 }
 .aboutUs {
     width: 100vw;
